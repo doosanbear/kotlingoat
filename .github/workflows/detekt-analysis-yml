@@ -36,11 +36,11 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Downloads detekt and installs it into the PATH, note 0.15.0 was the first version to support SARIF output
+    # Downloads detekt and installs it into the PATH, note 1.15.0 was the first version to support SARIF output
     - name: Setup Detekt
       uses: peter-murray/setup-detekt@v1
       with:
-        detekt_version: 0.15.0
+        detekt_version: 1.15.0
 
     # Performs static analysis using Detekt
     - name: Run Detekt
